@@ -1,0 +1,46 @@
+name: driver_intel_flutter
+description: "RidePlanr — driver positioning intelligence (Flutter port of DriverIntelPrototype)."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  shared_preferences: ^2.3.2
+  http: ^1.2.2
+  geolocator: ^13.0.1
+  geocoding: ^3.0.0
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.0
+  url_launcher: ^6.3.0
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  purchases_flutter: ^9.8.0
+  purchases_ui_flutter: ^9.8.0
+  app_links: ^7.0.0
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+
+# App launcher icons generated from the iOS prototype's 1024×1024 RidePlanr icon.
+# iOS icons must be opaque, so the alpha channel is flattened onto the dark
+# brand background. Regenerate with: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/icon/app_icon.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  background_color_ios: "#0D121A"
+  min_sdk_android: 21
